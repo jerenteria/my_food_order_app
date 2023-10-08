@@ -1,11 +1,12 @@
 import './App.css';
+import Cart from './components/Cart';
 
 function App() {
   return (
     <div className="App">
       <section>
       <h1 className="header">Welcome to DineHub!</h1>
-      <p className="cart">Cart</p>
+      <Cart />
       </section>
       <section>
         <div className="about"> 
