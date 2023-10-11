@@ -1,5 +1,6 @@
 import './App.css';
 import Cart from './components/Cart';
+import Food from './Food/Food'
 
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
         <p>Order delicious food from local restaurants! </p>
 
         <p>These mouth watering platters will not dissapoint!</p>
-
         </div>
+      </section>
+      <section>
+        <Food />
       </section>
     </div>
   );
