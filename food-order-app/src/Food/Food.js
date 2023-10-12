@@ -1,3 +1,6 @@
+import Card from "../UI/Card";
+import MealItem from './MealItem';
+
 const available_food = [
     {
         id: 1,
@@ -21,11 +24,19 @@ const available_food = [
 
 
 const Food = () => {
-const foodList = available_food.map(food => <li>{food.name}</li>);
+    const foodList = available_food.map(food => 
+    <MealItem 
+        key={food.id}
+        name={food.name} 
+        description={food.description} 
+        price={food.price} 
+    />);
     return (
-        <ul>
-            {foodList}
-        </ul>
+        <section>
+            <Card>
+                <ul>{foodList}</ul>
+            </Card>
+        </section>
     )
 };
 
