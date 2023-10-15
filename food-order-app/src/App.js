@@ -1,13 +1,26 @@
 import './App.css';
+import React, { useState } from 'react';
 import Cart from './components/Cart';
 import Food from './Food/Food'
+import CartIcon from './components/CartIcon';
 
 function App() {
+  const [cartIsShown, setCartIsShown] = useState(false);
+
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  }
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
   return (
     <div className="App">
       <section>
+      {cartIsShown && <Cart />}
       <h1 className="header">Welcome to DineHub!</h1>
-      <Cart />
+      <CartIcon />
       </section>
       <section>
         <div className="about"> 

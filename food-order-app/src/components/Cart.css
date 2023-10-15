@@ -1,5 +1,27 @@
-.cart {
-    position: absolute;
-    top: 26px;
-    right: 55px;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&family=Young+Serif&display=swap');
+
+* {
+  font-family: 'Roboto', serif;
+  font-size: 25px;
+}
+
+#close-button {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: orange;
+}
+
+#close-button:hover {
+  background-color: red;
+}
+
+#order-button {
+  margin-top: 10px;
+  padding:  20px;
+  border-radius: 15px;
+  margin-left: 10px;
+  background-color: orange;
+}
+
+
