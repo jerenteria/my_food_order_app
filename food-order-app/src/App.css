@@ -23,8 +23,7 @@
   background-color: gray;
   font-size: 25px;
   padding: 80px;
-  display: flexbox;
-  margin: 25px 90px 15px 90px;
+  margin: 120px 90px 15px 90px;
   border-radius: 30px;
   border: solid thick black;
 }

@@ -1,9 +1,10 @@
-const { default: CartIcon } = require("./CartIcon")
+import CartIcon from './CartIcon';
+import './CartIconButton.css';
 
 const cartIconButton = (props) => {
     return (
-        <button>
-            <CartIcon />
+        <button className="cart-button">
+            <CartIcon onClick={props.onShowCart} />
         </button>
     );
 };
