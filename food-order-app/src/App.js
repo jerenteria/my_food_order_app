@@ -2,7 +2,8 @@ import './App.css';
 import React, { useState } from 'react';
 import Cart from './components/Cart';
 import Food from './Food/Food'
-import CartIconButton from './components/CartIconButton';
+import CartIconButton from './UI/HeaderCartButton';
+import Header from './UI/Header';
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -19,8 +20,7 @@ function App() {
     <div className="App">
       <section>
       {cartIsShown && <Cart />}
-      <h1 className="header">Welcome to DineHub!</h1>
-      <CartIconButton onShowCart={showCartHandler} />
+      <Header />
       </section>
       <section>
         <div className="about"> 

@@ -1,12 +1,8 @@
-.cart-icon {
+.cart-button button {
     position: fixed;
     background-color: rgb(185, 131, 31);
     border-radius: 10px;
     right: 65px;
     top: 25px;
     height: 40px;
-}
-
-.header-cart-text {
-    margin-right: 55px;
 }
