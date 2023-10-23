@@ -19,8 +19,8 @@ function App() {
   return (
     <div className="App">
       <section>
-      {cartIsShown && <Cart />}
-      <Header />
+      {cartIsShown && <Cart onClose={hideCartHandler} />}
+      <Header onShowCart={showCartHandler}/>
       </section>
       <section>
         <div className="about"> 
