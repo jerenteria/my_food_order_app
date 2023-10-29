@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState } from 'react';
 import Cart from './components/Cart';
 import Food from './Food/Food'
-import CartIconButton from './UI/HeaderCartButton';
 import Header from './UI/Header';
 import CartProvider from './store/CartProvider';
 

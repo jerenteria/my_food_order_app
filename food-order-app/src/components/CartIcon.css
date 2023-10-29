@@ -10,3 +10,7 @@
 .header-cart-text {
     margin-right: 55px;
 }
+
+.cart-item-amount {
+    position: absolute;
+}
