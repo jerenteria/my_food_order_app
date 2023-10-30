@@ -27,6 +27,7 @@ const Food = () => {
     const foodList = available_food.map(food => 
     <MealItem 
         key={food.id}
+        id={food.id}
         name={food.name} 
         description={food.description} 
         price={food.price} 
